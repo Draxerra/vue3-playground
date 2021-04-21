@@ -1,0 +1,14 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "render", function () {
+  return render;
+});
+var _vue = require("vue");
+function render(_ctx, _cache) {
+  return (_vue.openBlock(), _vue.createBlock("div", null, "Hello World!"));
+}
+if (module.hot) {
+  module.hot.accept(() => {
+    __VUE_HMR_RUNTIME__.rerender('116ec7-hmr', render);
+  });
+}

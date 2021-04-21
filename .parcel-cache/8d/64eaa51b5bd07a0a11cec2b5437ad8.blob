@@ -1,0 +1,7 @@
+var _vue = require("vue");
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _vueDefault = _parcelHelpers.interopDefault(_vue);
+var _AppVue = require("./App.vue");
+var _AppVueDefault = _parcelHelpers.interopDefault(_AppVue);
+console.log(_vueDefault.default);
+_vueDefault.default.createApp(_AppVueDefault.default).mount("#root");
