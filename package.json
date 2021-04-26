@@ -5,11 +5,14 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.13.16",
-    "@parcel/transformer-vue": "2.0.0-nightly.2267+3baf990a",
-    "parcel": "nightly"
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "@parcel/transformer-vue": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.32.11"
   },
   "dependencies": {
-    "vue": "^3.0.11"
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.6"
   },
   "scripts": {
     "start": "parcel serve ./src/index.html",

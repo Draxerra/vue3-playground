@@ -38,9 +38,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@babel/core", "npm:7.13.16"],
+            ["@parcel/transformer-sass", "npm:2.0.0-nightly.645"],
             ["@parcel/transformer-vue", "npm:2.0.0-nightly.2267"],
             ["parcel", "npm:2.0.0-nightly.643"],
-            ["vue", "npm:3.0.11"]
+            ["sass", "npm:1.32.11"],
+            ["vue", "npm:3.0.11"],
+            ["vue-router", "virtual:046bc7da2360149f35d5b9dbff0ef9f86bf4e681d2a28ae173da89adf8353ecb515270daf33a6aa07673889be43f3ed863a4a58a17d9aa3fe6bb6180fae1042b#npm:4.0.6"]
           ],
           "linkType": "SOFT",
         }]
@@ -3069,6 +3072,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@parcel/transformer-sass", [
+        ["npm:2.0.0-nightly.645", {
+          "packageLocation": "./.yarn/cache/@parcel-transformer-sass-npm-2.0.0-nightly.645-7ac61749ef-c5dd50ee8c.zip/node_modules/@parcel/transformer-sass/",
+          "packageDependencies": [
+            ["@parcel/transformer-sass", "npm:2.0.0-nightly.645"],
+            ["@parcel/plugin", "npm:2.0.0-nightly.645"],
+            ["@parcel/source-map", "npm:2.0.0-alpha.4.21"],
+            ["sass", "npm:1.32.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@parcel/transformer-vue", [
         ["npm:2.0.0-nightly.2267", {
           "packageLocation": "./.yarn/cache/@parcel-transformer-vue-npm-2.0.0-nightly.2267-60fa57ada1-4e167a458f.zip/node_modules/@parcel/transformer-vue/",
@@ -3483,6 +3498,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["anymatch", [
+        ["npm:3.1.2", {
+          "packageLocation": "./.yarn/cache/anymatch-npm-3.1.2-1d5471acfa-cd6c08eb8d.zip/node_modules/anymatch/",
+          "packageDependencies": [
+            ["anymatch", "npm:3.1.2"],
+            ["normalize-path", "npm:3.0.0"],
+            ["picomatch", "npm:2.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["aproba", [
         ["npm:1.2.0", {
           "packageLocation": "./.yarn/cache/aproba-npm-1.2.0-34129f0778-d4bac3e640.zip/node_modules/aproba/",
@@ -3835,6 +3861,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/big.js-npm-5.2.2-e147c30820-ea33d7d256.zip/node_modules/big.js/",
           "packageDependencies": [
             ["big.js", "npm:5.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["binary-extensions", [
+        ["npm:2.2.0", {
+          "packageLocation": "./.yarn/cache/binary-extensions-npm-2.2.0-180c33fec7-0f5f5685f3.zip/node_modules/binary-extensions/",
+          "packageDependencies": [
+            ["binary-extensions", "npm:2.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4225,6 +4260,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:4.1.0"],
             ["ansi-styles", "npm:4.3.0"],
             ["supports-color", "npm:7.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["chokidar", [
+        ["npm:3.5.1", {
+          "packageLocation": "./.yarn/cache/chokidar-npm-3.5.1-205217279e-61b3f710f9.zip/node_modules/chokidar/",
+          "packageDependencies": [
+            ["chokidar", "npm:3.5.1"],
+            ["anymatch", "npm:3.1.2"],
+            ["braces", "npm:3.0.2"],
+            ["fsevents", "patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"],
+            ["glob-parent", "npm:5.1.2"],
+            ["is-binary-path", "npm:2.1.0"],
+            ["is-glob", "npm:4.0.1"],
+            ["normalize-path", "npm:3.0.0"],
+            ["readdirp", "npm:3.5.0"]
           ],
           "linkType": "HARD",
         }]
@@ -5810,6 +5862,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["fsevents", [
+        ["patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea", {
+          "packageLocation": "./.yarn/unplugged/fsevents-patch-3bc6df0d9f/node_modules/fsevents/",
+          "packageDependencies": [
+            ["fsevents", "patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"],
+            ["node-gyp", "npm:8.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["function-bind", [
         ["npm:1.1.1", {
           "packageLocation": "./.yarn/cache/function-bind-npm-1.1.1-b56b322ae9-ffad86e7d2.zip/node_modules/function-bind/",
@@ -6522,6 +6584,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-bigint-npm-1.0.1-6228cdc523-dd132ab80f.zip/node_modules/is-bigint/",
           "packageDependencies": [
             ["is-bigint", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["is-binary-path", [
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/is-binary-path-npm-2.1.0-e61d46f557-49a1446a3c.zip/node_modules/is-binary-path/",
+          "packageDependencies": [
+            ["is-binary-path", "npm:2.1.0"],
+            ["binary-extensions", "npm:2.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -7604,9 +7676,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["movie-db", "workspace:."],
             ["@babel/core", "npm:7.13.16"],
+            ["@parcel/transformer-sass", "npm:2.0.0-nightly.645"],
             ["@parcel/transformer-vue", "npm:2.0.0-nightly.2267"],
             ["parcel", "npm:2.0.0-nightly.643"],
-            ["vue", "npm:3.0.11"]
+            ["sass", "npm:1.32.11"],
+            ["vue", "npm:3.0.11"],
+            ["vue-router", "virtual:046bc7da2360149f35d5b9dbff0ef9f86bf4e681d2a28ae173da89adf8353ecb515270daf33a6aa07673889be43f3ed863a4a58a17d9aa3fe6bb6180fae1042b#npm:4.0.6"]
           ],
           "linkType": "SOFT",
         }]
@@ -7743,6 +7818,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["nopt", "npm:5.0.0"],
             ["abbrev", "npm:1.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["normalize-path", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/normalize-path-npm-3.0.0-658ba7d77f-215a701b47.zip/node_modules/normalize-path/",
+          "packageDependencies": [
+            ["normalize-path", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9114,6 +9198,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["readdirp", [
+        ["npm:3.5.0", {
+          "packageLocation": "./.yarn/cache/readdirp-npm-3.5.0-a1b1568d32-a64fe56069.zip/node_modules/readdirp/",
+          "packageDependencies": [
+            ["readdirp", "npm:3.5.0"],
+            ["picomatch", "npm:2.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["regenerate", [
         ["npm:1.4.2", {
           "packageLocation": "./.yarn/cache/regenerate-npm-1.4.2-b296c5b63a-54275a99ef.zip/node_modules/regenerate/",
@@ -9457,6 +9551,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-549ba83f5b.zip/node_modules/safer-buffer/",
           "packageDependencies": [
             ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sass", [
+        ["npm:1.32.11", {
+          "packageLocation": "./.yarn/cache/sass-npm-1.32.11-09b3607a20-a56ca780fe.zip/node_modules/sass/",
+          "packageDependencies": [
+            ["sass", "npm:1.32.11"],
+            ["chokidar", "npm:3.5.1"]
           ],
           "linkType": "HARD",
         }]
@@ -10528,6 +10632,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vue/compiler-dom", "npm:3.0.11"],
             ["@vue/runtime-dom", "npm:3.0.11"],
             ["@vue/shared", "npm:3.0.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vue-router", [
+        ["npm:4.0.6", {
+          "packageLocation": "./.yarn/cache/vue-router-npm-4.0.6-87aa87dc91-0f7ac0b5da.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "npm:4.0.6"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:046bc7da2360149f35d5b9dbff0ef9f86bf4e681d2a28ae173da89adf8353ecb515270daf33a6aa07673889be43f3ed863a4a58a17d9aa3fe6bb6180fae1042b#npm:4.0.6", {
+          "packageLocation": "./.yarn/$$virtual/vue-router-virtual-9ffe38d3a7/0/cache/vue-router-npm-4.0.6-87aa87dc91-0f7ac0b5da.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "virtual:046bc7da2360149f35d5b9dbff0ef9f86bf4e681d2a28ae173da89adf8353ecb515270daf33a6aa07673889be43f3ed863a4a58a17d9aa3fe6bb6180fae1042b#npm:4.0.6"],
+            ["@types/vue", null],
+            ["vue", "npm:3.0.11"]
+          ],
+          "packagePeers": [
+            "@types/vue",
+            "vue"
           ],
           "linkType": "HARD",
         }]
